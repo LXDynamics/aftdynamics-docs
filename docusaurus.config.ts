@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'AFT Dynamics',
+  tagline: 'We make rocket engines',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -15,15 +15,15 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://aftdynamics.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'AFTDynamics', // Usually your GitHub org/user name.
+  projectName: 'aftdynamics-docs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -69,6 +69,18 @@ const config: Config = {
     ],
   ],
 
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'contact',
+        path: 'contact',
+        routeBasePath: 'contact',
+        sidebarPath: './sidebarsContact.ts',
+      },
+    ],
+  ],
+
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
@@ -83,9 +95,16 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Docs',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
+        {
+          type: 'docSidebar',
+          sidebarId: 'contactSidebar',
+          docsPluginId: 'contact',
+          position: 'left',
+          label: 'Contact',
+        },
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
@@ -100,25 +119,17 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'Docs',
+              to: '/docs/',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'Contact',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
+              label: 'Alexander Wright, PhD',
+              to: '/contact/alexander-wright-phd',
             },
           ],
         },
@@ -131,12 +142,12 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} AFT Dynamics Pty. Ltd., Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
