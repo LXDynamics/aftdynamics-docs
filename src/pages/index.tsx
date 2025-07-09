@@ -13,9 +13,13 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
+        <div className={styles.heroLogo}>
+          <img 
+            src="/img/logo-stacked.svg" 
+            alt="AFT Dynamics Logo"
+            className={styles.heroLogoImg}
+          />
+        </div>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
       </div>
     </header>

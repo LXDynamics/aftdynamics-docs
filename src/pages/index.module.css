@@ -21,3 +21,29 @@
   align-items: center;
   justify-content: center;
 }
+
+.heroLogo {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroLogoImg {
+  height: 200px;
+  width: auto;
+  max-width: 100%;
+  filter: brightness(0) invert(1); /* Make logo white for dark hero background */
+}
+
+@media screen and (max-width: 996px) {
+  .heroLogoImg {
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heroLogoImg {
+    height: 80px;
+  }
+}
