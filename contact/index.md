@@ -8,7 +8,7 @@ Welcome to the AFT Dynamics contact page. Here you can find information about ou
 
 ## Our Team
 
-- [Alexander Wright, PhD](./alexander-wright-phd) - Founder and CEO
+- [Alexander Wright, PhD](./alexander-wright-phd.md) - Founder and CEO
 
 ## General Inquiries
 
