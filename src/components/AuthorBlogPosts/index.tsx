@@ -55,8 +55,8 @@ export function AuthorBlogPosts({ showTags = true, showPostsOnly = true, showTag
       <div className={styles.blogPostsGrid}>
         <article className={styles.blogPostCard}>
           <h3 className={styles.postTitle}>
-            <Link to="/blog/2025-07-09-first-blog-post">
-              Welcome to AFT Dynamics Blog
+            <Link to="/blog/first-blog-post">
+              First Blog Post
             </Link>
           </h3>
           <div className={styles.postMeta}>
