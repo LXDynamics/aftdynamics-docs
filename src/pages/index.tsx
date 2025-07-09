@@ -15,7 +15,7 @@ function HomepageHeader() {
       <div className="container">
         <div className={styles.heroLogo}>
           <img 
-            src="/img/logo-stacked.svg" 
+            src="/img/logo-stacked-clean.svg" 
             alt="AFT Dynamics Logo"
             className={styles.heroLogoImg}
           />
