@@ -11,12 +11,12 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'A New Era of Rocket Engines',
     Svg: require('@site/static/img/logo.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        AFT Dynamics designs and manufactures rocket engines with a focus on
+        simplicity, reliability, and affordability.
       </>
     ),
   },
