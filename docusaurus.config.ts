@@ -97,22 +97,21 @@ const config: Config = {
           position: 'left',
           label: 'Contact',
         },
-        {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
-        },
       ],
     },
     footer: {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Documentation',
           items: [
             {
-              label: 'Docs',
+              label: 'Getting Started',
               to: '/docs/',
+            },
+            {
+              label: 'Business Model',
+              to: '/docs/business/',
             },
           ],
         },
@@ -120,13 +119,17 @@ const config: Config = {
           title: 'Contact',
           items: [
             {
+              label: 'Our Team',
+              to: '/contact/',
+            },
+            {
               label: 'Alexander Wright, PhD',
               to: '/contact/alexander-wright-phd',
             },
           ],
         },
         {
-          title: 'More',
+          title: 'Community',
           items: [
             {
               label: 'Blog',
@@ -134,7 +137,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/',
+              href: 'https://github.com/LXDynamics',
             },
           ],
         },
