@@ -1,0 +1,100 @@
+.protectedWrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.distortedText {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  font-family: monospace;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  user-select: none;
+  padding: 0.25rem 0.5rem;
+  transition: all 0.2s ease;
+  min-width: 180px;
+  height: 1.5em;
+}
+
+.distortedText:hover {
+  transform: scale(1.02);
+}
+
+.distortedText:focus {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+.layer1,
+.layer2,
+.layer3 {
+  position: absolute;
+  top: 50%;
+  left: 0.5rem;
+  transform: translateY(-50%);
+  white-space: nowrap;
+}
+
+.layer1 {
+  color: var(--ifm-color-emphasis-700);
+  z-index: 3;
+  filter: blur(0.5px);
+  opacity: 0.9;
+}
+
+.layer2 {
+  color: var(--ifm-color-primary);
+  z-index: 2;
+  transform: translateY(-50%) translateX(1px);
+  opacity: 0.3;
+  filter: blur(1px);
+}
+
+.layer3 {
+  color: var(--ifm-color-danger);
+  z-index: 1;
+  transform: translateY(-50%) translateX(-1px);
+  opacity: 0.4;
+  filter: blur(0.8px);
+}
+
+.hoverHint {
+  font-size: 0.75em;
+  color: var(--ifm-color-emphasis-600);
+  font-style: italic;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.protectedWrapper:hover .hoverHint {
+  opacity: 1;
+}
+
+.revealedLink {
+  color: var(--ifm-link-color);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.revealedLink:hover {
+  text-decoration: underline;
+  color: var(--ifm-link-hover-color);
+}
+
+/* Dark mode adjustments */
+html[data-theme='dark'] .layer1 {
+  color: var(--ifm-color-emphasis-300);
+}
+
+html[data-theme='dark'] .layer2 {
+  color: var(--ifm-color-primary-light);
+  opacity: 0.4;
+}
+
+html[data-theme='dark'] .layer3 {
+  color: var(--ifm-color-warning);
+  opacity: 0.5;
+}

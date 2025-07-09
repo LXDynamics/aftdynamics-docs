@@ -1,6 +1,11 @@
 ---
 sidebar_position: 2
+sidebar_label: Alexander Wright, PhD
 ---
+
+import { ProtectedEmail, ProtectedPhone, NoIndexHead } from '@site/src/components/ProtectedContact';
+
+<NoIndexHead />
 
 # Alexander Wright, PhD
 
@@ -8,8 +13,8 @@ sidebar_position: 2
 
 ## Contact
 
-- Email: [alex@aftdynamics.com](mailto:alex@aftdynamics.com)
-- Phone: [+61 432 466 988](tel:+61432466988)
+- Email: <ProtectedEmail user="alex" domain="aftdynamics.com" />
+- Phone: <ProtectedPhone countryCode="+61" number="432 466 988" />
 - LinkedIn: [Alexander Wright](https://www.linkedin.com/in/walexj/)
 - GitHub: [LXDynamics](https://github.com/LXDynamics)
 
