@@ -8,11 +8,15 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
 }
 
 @media screen and (max-width: 996px) {
   .heroBanner {
     padding: 2rem;
+    min-height: 300px;
   }
 }
 
@@ -23,16 +27,16 @@
 }
 
 .heroLogo {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .heroLogoImg {
-  height: 200px;
+  height: 240px; /* 60% of 400px min-height */
   width: auto;
-  max-width: 100%;
+  max-width: 90%;
   filter: brightness(0) invert(1); /* Make logo white for dark hero background */
   display: block;
   /* iOS Safari SVG fix */
@@ -44,12 +48,17 @@
 
 @media screen and (max-width: 996px) {
   .heroLogoImg {
-    height: 120px;
+    height: 180px; /* 60% of 300px min-height */
   }
 }
 
 @media screen and (max-width: 768px) {
   .heroLogoImg {
-    height: 80px;
+    height: 140px;
+    max-width: 95%;
+  }
+  
+  .heroLogo {
+    margin-bottom: 0.5rem;
   }
 }
