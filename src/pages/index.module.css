@@ -34,6 +34,12 @@
   width: auto;
   max-width: 100%;
   filter: brightness(0) invert(1); /* Make logo white for dark hero background */
+  display: block;
+  /* iOS Safari SVG fix */
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 @media screen and (max-width: 996px) {
