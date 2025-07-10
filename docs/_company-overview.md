@@ -68,7 +68,7 @@ AFT Dynamics is positioned to serve the rapidly growing commercial launch market
 
 ## Leadership
 
-Our team brings together expertise in:
+The Team brings together expertise in:
 
 - Aerospace propulsion systems
 - Advanced manufacturing

@@ -87,7 +87,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'About AFT Dynamics',
+          label: 'About',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
@@ -95,7 +95,7 @@ const config: Config = {
           sidebarId: 'contactSidebar',
           docsPluginId: 'contact',
           position: 'left',
-          label: 'Our Team',
+          label: 'The Team',
         },
       ],
     },
@@ -116,10 +116,10 @@ const config: Config = {
           ],
         },
         {
-          title: 'Our Team',
+          title: 'The Team',
           items: [
             {
-              label: 'Our Team',
+              label: 'The Team',
               to: '/contact/',
             },
             // {

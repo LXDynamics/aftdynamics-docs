@@ -1,12 +1,12 @@
 ---
 sidebar_position: 1
-sidebar_label: Our Team
-title: Our Team
+sidebar_label: The Team
+title: The Team
 ---
 
-# Our Team
+# The Team
 
-Welcome to the AFT Dynamics team page. Here you can find information about our team and how to reach us.
+Welcome to the AFT Dynamics team page. Here you can find information about The Team and how to reach us.
 
 ## Leadership
 
