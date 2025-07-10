@@ -95,7 +95,7 @@ const config: Config = {
           sidebarId: 'contactSidebar',
           docsPluginId: 'contact',
           position: 'left',
-          label: 'Contact',
+          label: 'Our Team',
         },
       ],
     },
@@ -116,7 +116,7 @@ const config: Config = {
           ],
         },
         {
-          title: 'Contact',
+          title: 'Our Team',
           items: [
             {
               label: 'Our Team',

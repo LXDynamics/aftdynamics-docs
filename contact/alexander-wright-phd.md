@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 sidebar_label: Alexander Wright, PhD
+title: Alexander Wright, PhD
 ---
 
 import { ProtectedEmail, ProtectedPhone, NoIndexHead } from '@site/src/components/ProtectedContact';

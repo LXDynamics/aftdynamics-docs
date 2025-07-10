@@ -1,17 +1,14 @@
 ---
 sidebar_position: 1
-sidebar_label: Contact Us
+sidebar_label: Our Team
+title: Our Team
 ---
 
-import { NoIndexHead } from '@site/src/components/ProtectedContact';
+# Our Team
 
-<NoIndexHead />
+Welcome to the AFT Dynamics team page. Here you can find information about our team and how to reach us.
 
-# Contact Us
-
-Welcome to the AFT Dynamics contact page. Here you can find information about our team and how to reach us.
-
-## Our Team
+## Leadership
 
 - [Alexander Wright, PhD](./alexander-wright-phd.md) - Founder and CEO
 
