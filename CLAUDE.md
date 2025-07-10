@@ -93,3 +93,6 @@ yarn clear
 - Always run `yarn typecheck` before committing TypeScript changes
 - Build locally with `yarn build` to catch any build-time errors
 - The site deploys to https://aftdynamics.com via GitHub Pages
+
+## Development Best Practices
+- Remember to use npm not yarn

@@ -1,109 +1,22 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
+import { blogPosts } from '@site/src/utils/useBlogData';
 import styles from './styles.module.css';
-
-interface BlogPost {
-  id: string;
-  metadata: {
-    title: string;
-    date: string;
-    formattedDate: string;
-    authors: Array<{
-      name: string;
-      key: string;
-    }>;
-    tags: Array<{
-      label: string;
-      permalink: string;
-    }>;
-    readingTime: number;
-    truncated: boolean;
-    permalink: string;
-    description?: string;
-  };
-}
 
 interface AuthorBlogPostsProps {
   authorId: string;
   maxPosts?: number;
   showTags?: boolean;
-  showPostsOnly?: boolean;
   showTagsOnly?: boolean;
 }
 
-export function AuthorBlogPosts({ showTags = true, showPostsOnly = true, showTagsOnly = false }: AuthorBlogPostsProps) {
-  // For now, let's create a static display to verify the component is working
-  // We'll update this once we figure out the correct way to access blog data
-  
-  // Show only tags
-  if (showTagsOnly) {
-    return (
-      <div className={styles.tagCloud}>
-        <Link to="/blog/tags/rocket-engine" className={styles.tagCloudItem} data-count="1">
-          Rocket Engine (1)
-        </Link>
-        <Link to="/blog/tags/space-exploration" className={styles.tagCloudItem} data-count="1">
-          Space Exploration (1)
-        </Link>
-      </div>
-    );
-  }
-
-  // Show only posts (default behavior)
-  return (
-    <div className={styles.authorBlogSection}>
-      <div className={styles.blogPostsGrid}>
-        <article className={styles.blogPostCard}>
-          <h3 className={styles.postTitle}>
-            <Link to="/blog/first-blog-post">
-              First Blog Post
-            </Link>
-          </h3>
-          <div className={styles.postMeta}>
-            <time dateTime="2025-07-09">
-              July 9, 2025
-            </time>
-            <span className={styles.readingTime}>
-              5 min read
-            </span>
-          </div>
-          <p className={styles.postDescription}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit...
-          </p>
-          {showTags && (
-            <div className={styles.postTags}>
-              <Link to="/blog/tags/rocket-engine" className={styles.tag}>
-                Rocket Engine
-              </Link>
-              <Link to="/blog/tags/space-exploration" className={styles.tag}>
-                Space Exploration
-              </Link>
-            </div>
-          )}
-        </article>
-      </div>
-    </div>
-  );
-  
-  // Original dynamic code - keeping for reference
-  /*
-  const blogPluginData = usePluginData('docusaurus-plugin-content-blog') as any;
-  
-  if (!blogPluginData || !blogPluginData.blogPosts) {
-    return (
-      <div className={styles.authorBlogSection}>
-        <h2>Recent Blog Posts</h2>
-        <p>Blog posts will appear here once published.</p>
-      </div>
-    );
-  }
-
+export function AuthorBlogPosts({ authorId, maxPosts = 5, showTags = true, showTagsOnly = false }: AuthorBlogPostsProps) {
   // Filter posts by author
-  const authorPosts = blogPluginData.blogPosts
-    .filter((post: BlogPost) => 
+  const authorPosts = blogPosts
+    .filter(post => 
       post.metadata.authors.some(author => author.key === authorId)
     )
-    .sort((a: BlogPost, b: BlogPost) => 
+    .sort((a, b) => 
       new Date(b.metadata.date).getTime() - new Date(a.metadata.date).getTime()
     )
     .slice(0, maxPosts);
@@ -111,10 +24,83 @@ export function AuthorBlogPosts({ showTags = true, showPostsOnly = true, showTag
   if (authorPosts.length === 0) {
     return (
       <div className={styles.authorBlogSection}>
-        <h2>Recent Blog Posts</h2>
         <p>No blog posts by this author yet.</p>
       </div>
     );
   }
-  */
+
+  // Extract and count all tags from author's posts
+  if (showTagsOnly) {
+    const tagCount: { [key: string]: { count: number; permalink: string } } = {};
+    blogPosts
+      .filter(post => 
+        post.metadata.authors.some(author => author.key === authorId)
+      )
+      .forEach(post => {
+        post.metadata.tags.forEach(tag => {
+          if (!tagCount[tag.label]) {
+            tagCount[tag.label] = { count: 0, permalink: tag.permalink };
+          }
+          tagCount[tag.label].count++;
+        });
+      });
+
+    const sortedTags = Object.entries(tagCount)
+      .sort(([, a], [, b]) => b.count - a.count)
+      .slice(0, maxPosts);
+
+    return (
+      <div className={styles.tagCloud}>
+        {sortedTags.map(([label, { count, permalink }]) => (
+          <Link 
+            key={permalink}
+            to={permalink} 
+            className={styles.tagCloudItem} 
+            data-count={count}
+          >
+            {label} ({count})
+          </Link>
+        ))}
+      </div>
+    );
+  }
+
+  // Show posts
+  return (
+    <div className={styles.authorBlogSection}>
+      <div className={styles.blogPostsGrid}>
+        {authorPosts.map(post => (
+          <article key={post.id} className={styles.blogPostCard}>
+            <h3 className={styles.postTitle}>
+              <Link to={post.metadata.permalink}>
+                {post.metadata.title}
+              </Link>
+            </h3>
+            <div className={styles.postMeta}>
+              <time dateTime={post.metadata.date}>
+                {post.metadata.formattedDate}
+              </time>
+              <span className={styles.readingTime}>
+                {Math.ceil(post.metadata.readingTime * 60)} min read
+              </span>
+            </div>
+            {post.metadata.description && (
+              <p className={styles.postDescription}>
+                {post.metadata.description}
+              </p>
+            )}
+            {showTags && post.metadata.tags.length > 0 && (
+              <div className={styles.postTags}>
+                {post.metadata.tags.map(tag => (
+                  <Link key={tag.permalink} to={tag.permalink} className={styles.tag}>
+                    {tag.label}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </article>
+        ))}
+      </div>
+    </div>
+  );
 }

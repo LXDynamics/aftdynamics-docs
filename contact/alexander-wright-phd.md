@@ -30,4 +30,4 @@ Alexander Wright is a PhD in Mechanical Engineering from Dalhousie University, H
 
 ### Most Used Tags
 
-<AuthorBlogPosts authorId="awright" maxPosts={6} showPostsOnly={false} showTagsOnly={true} />
+<AuthorBlogPosts authorId="awright" maxPosts={6} showTagsOnly={true} />
