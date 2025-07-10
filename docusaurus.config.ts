@@ -75,7 +75,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/logo.svg',
     navbar: {
       title: 'Home',
       logo: {
@@ -87,7 +87,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Docs',
+          label: 'About AFT Dynamics',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
