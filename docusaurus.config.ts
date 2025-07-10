@@ -106,13 +106,13 @@ const config: Config = {
           title: 'Documentation',
           items: [
             {
-              label: 'Getting Started',
+              label: 'About AFT',
               to: '/docs/',
             },
-            {
-              label: 'Business Model',
-              to: '/docs/business/',
-            },
+            // {
+            //   label: 'Business Model',
+            //   to: '/docs/business/',
+            // },
           ],
         },
         {
@@ -122,10 +122,10 @@ const config: Config = {
               label: 'Our Team',
               to: '/contact/',
             },
-            {
-              label: 'Alexander Wright, PhD',
-              to: '/contact/alexander-wright-phd',
-            },
+            // {
+            //   label: 'Alexander Wright, PhD',
+            //   to: '/contact/alexander-wright-phd',
+            // },
           ],
         },
         {
@@ -135,10 +135,10 @@ const config: Config = {
               label: 'Blog',
               to: '/blog',
             },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/LXDynamics',
-            },
+            // {
+            //   label: 'GitHub',
+            //   href: 'https://github.com/LXDynamics',
+            // },
           ],
         },
       ],
