@@ -82,7 +82,7 @@ export function AuthorBlogPosts({ authorId, maxPosts = 5, showTags = true, showT
                 {post.metadata.formattedDate}
               </time>
               <span className={styles.readingTime}>
-                {Math.ceil(post.metadata.readingTime * 60)} min read
+                {Math.ceil(post.metadata.readingTime)} min read
               </span>
             </div>
             {post.metadata.description && (
