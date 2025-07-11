@@ -62,6 +62,15 @@ function blogDataPlugin(context, options) {
         const processedPosts = blogPosts.map(post => {
           const metadata = post.metadata || {};
           
+          // Format date as "weekday, day month year"
+          const dateObj = new Date(metadata.date || new Date().toISOString());
+          const formattedDate = dateObj.toLocaleDateString('en-AU', {
+            weekday: 'long',
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric'
+          });
+          
           return {
             id: post.id || metadata.permalink || 'unknown',
             metadata: {
@@ -69,7 +78,7 @@ function blogDataPlugin(context, options) {
               title: metadata.title || 'Untitled',
               description: metadata.description || '',
               date: metadata.date || new Date().toISOString(),
-              formattedDate: metadata.formattedDate || metadata.date || '',
+              formattedDate: formattedDate,
               tags: (metadata.tags || []).map(tag => ({
                 label: tag.label || tag.name || 'Unknown Tag',
                 permalink: tag.permalink || '#'

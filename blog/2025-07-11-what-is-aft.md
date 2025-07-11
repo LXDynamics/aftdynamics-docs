@@ -37,4 +37,6 @@ For each of those engines I was responsible for much of the architecture at the 
 
 These are also the technical pillars of AFT Dynamics' research and development efforts.
 
+Plus there's a bit of a double entendre. We're making rocket engines and they go on the aft end of the vehicle.
+
 Stay tuned as the company grows and to learn more about what we'll be doing in the world of rocketry and space launch!

@@ -78,7 +78,7 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/logo.svg',
     navbar: {
-      title: 'Home',
+      title: 'AFT',
       logo: {
         alt: 'AFT Dynamics Logo',
         src: 'img/logo.svg',
@@ -104,10 +104,10 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Documentation',
+          title: 'About',
           items: [
             {
-              label: 'About AFT',
+              label: 'AFT',
               to: '/docs/',
             },
             // {

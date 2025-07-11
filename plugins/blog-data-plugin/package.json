@@ -1,7 +1,7 @@
 {
   "name": "@aftdynamics/docusaurus-plugin-blog-data",
   "version": "1.0.0",
-  "description": "Docusaurus plugin to provide blog metadata as global data for AFT Dynamics documentation site",
+  "description": "Docusaurus plugin to provide blog metadata as global data for AFT Dynamics blog and website",
   "main": "index.js",
   "types": "src/types.ts",
   "keywords": [
