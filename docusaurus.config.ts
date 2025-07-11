@@ -76,7 +76,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/logo.svg',
     navbar: {
       title: 'Home',
       logo: {
@@ -88,7 +88,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Docs',
+          label: 'About',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
@@ -96,7 +96,7 @@ const config: Config = {
           sidebarId: 'contactSidebar',
           docsPluginId: 'contact',
           position: 'left',
-          label: 'Our Team',
+          label: 'The Team',
         },
       ],
     },
@@ -107,26 +107,26 @@ const config: Config = {
           title: 'Documentation',
           items: [
             {
-              label: 'Getting Started',
+              label: 'About AFT',
               to: '/docs/',
             },
-            {
-              label: 'Business Model',
-              to: '/docs/business/',
-            },
+            // {
+            //   label: 'Business Model',
+            //   to: '/docs/business/',
+            // },
           ],
         },
         {
-          title: 'Our Team',
+          title: 'The Team',
           items: [
             {
-              label: 'Our Team',
+              label: 'The Team',
               to: '/contact/',
             },
-            {
-              label: 'Alexander Wright, PhD',
-              to: '/contact/alexander-wright-phd',
-            },
+            // {
+            //   label: 'Alexander Wright, PhD',
+            //   to: '/contact/alexander-wright-phd',
+            // },
           ],
         },
         {
@@ -136,10 +136,10 @@ const config: Config = {
               label: 'Blog',
               to: '/blog',
             },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/LXDynamics',
-            },
+            // {
+            //   label: 'GitHub',
+            //   href: 'https://github.com/LXDynamics',
+            // },
           ],
         },
       ],

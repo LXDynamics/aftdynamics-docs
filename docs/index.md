@@ -4,19 +4,19 @@ title: Introduction
 sidebar_position: 1
 ---
 
-# Welcome to AFT Dynamics Documentation
+# Welcome to AFT Dynamics
 
-Welcome to the official documentation for AFT Dynamics. This documentation will help you understand our products, services, and solutions.
+Welcome to the official site for AFT Dynamics. This site will help you understand our business, products, services, and solutions.
 
 ## Getting Started
 
-Explore our documentation to learn more about:
+This site is under active development and will eventually provide information on:
 
-- Our business solutions
-- Technical specifications
-- Implementation guides
-- Best practices
+- Our Business
+- Our Technology
+- Our Mission
+- Our Values
 
 ## Navigation
 
-Use the sidebar to navigate through different sections of our documentation.
+Use the sidebar to navigate through the site.
