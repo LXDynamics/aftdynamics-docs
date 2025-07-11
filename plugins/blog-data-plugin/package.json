@@ -1,0 +1,39 @@
+{
+  "name": "@aftdynamics/docusaurus-plugin-blog-data",
+  "version": "1.0.0",
+  "description": "Docusaurus plugin to provide blog metadata as global data for AFT Dynamics documentation site",
+  "main": "index.js",
+  "types": "src/types.ts",
+  "keywords": [
+    "docusaurus",
+    "plugin",
+    "blog",
+    "metadata",
+    "aftdynamics"
+  ],
+  "author": "AFT Dynamics",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "peerDependencies": {
+    "@docusaurus/core": "^3.8.0",
+    "@docusaurus/types": "^3.8.0",
+    "@docusaurus/utils": "^3.8.0",
+    "react": "^18.0.0 || ^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aftdynamics/aftdynamics-docs.git",
+    "directory": "plugins/blog-data-plugin"
+  },
+  "files": [
+    "index.js",
+    "src/",
+    "README.md"
+  ]
+}

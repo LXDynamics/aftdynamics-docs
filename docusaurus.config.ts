@@ -71,6 +71,7 @@ const config: Config = {
         sidebarPath: './sidebarsContact.ts',
       },
     ],
+    './plugins/blog-data-plugin',
   ],
 
   themeConfig: {

@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
-import { blogPosts } from '@site/src/utils/useBlogData';
+import { blogArchive } from '@site/src/generated/data';
+import type { BlogPost } from '@site/src/generated/types';
 import styles from './styles.module.css';
 
 interface AuthorBlogPostsProps {
@@ -12,7 +13,7 @@ interface AuthorBlogPostsProps {
 
 export function AuthorBlogPosts({ authorId, maxPosts = 5, showTags = true, showTagsOnly = false }: AuthorBlogPostsProps) {
   // Filter posts by author
-  const authorPosts = blogPosts
+  const authorPosts = blogArchive.posts
     .filter(post => 
       post.metadata.authors.some(author => author.key === authorId)
     )
@@ -32,7 +33,7 @@ export function AuthorBlogPosts({ authorId, maxPosts = 5, showTags = true, showT
   // Extract and count all tags from author's posts
   if (showTagsOnly) {
     const tagCount: { [key: string]: { count: number; permalink: string } } = {};
-    blogPosts
+    blogArchive.posts
       .filter(post => 
         post.metadata.authors.some(author => author.key === authorId)
       )
