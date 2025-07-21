@@ -84,12 +84,12 @@ const config: Config = {
         src: 'img/logo.svg',
       },
       items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'About',
-        },
+        // {
+        //   type: 'docSidebar',
+        //   sidebarId: 'tutorialSidebar',
+        //   position: 'left',
+        //   label: 'About',
+        // },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
           type: 'docSidebar',
@@ -103,19 +103,19 @@ const config: Config = {
     footer: {
       style: 'dark',
       links: [
-        {
-          title: 'About',
-          items: [
-            {
-              label: 'AFT',
-              to: '/docs/',
-            },
-            // {
-            //   label: 'Business Model',
-            //   to: '/docs/business/',
-            // },
-          ],
-        },
+        // {
+        //   title: 'About',
+        //   items: [
+        //     {
+        //       label: 'AFT',
+        //       to: '/docs/',
+        //     },
+        //     // {
+        //     //   label: 'Business Model',
+        //     //   to: '/docs/business/',
+        //     // },
+        //   ],
+        // },
         {
           title: 'The Team',
           items: [
@@ -136,10 +136,10 @@ const config: Config = {
               label: 'Blog',
               to: '/blog',
             },
-            // {
-            //   label: 'GitHub',
-            //   href: 'https://github.com/LXDynamics',
-            // },
+            {
+              label: 'GitHub',
+              href: 'https://github.com/aftdynamics',
+            },
           ],
         },
       ],

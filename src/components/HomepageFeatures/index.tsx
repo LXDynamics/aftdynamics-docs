@@ -11,12 +11,12 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'A New Era of Rocket Engines',
+    title: 'A New Era of Rocket Engines is Coming...',
     Svg: require('@site/static/img/logo.svg').default,
     description: (
       <>
         AFT Dynamics designs and manufactures rocket engines with a focus on
-        simplicity, reliability, and affordability.
+        simplicity, reliability, and reusability.
       </>
     ),
   },
