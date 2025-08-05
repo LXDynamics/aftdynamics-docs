@@ -1,6 +1,6 @@
-# AFT Dynamics Blog Data Plugin
+# AFTdynamics Blog Data Plugin
 
-A Docusaurus plugin that provides blog metadata as global data for the AFT Dynamics documentation site.
+A Docusaurus plugin that provides blog metadata as global data for the AFTdynamics documentation site.
 
 ## Features
 
@@ -18,16 +18,16 @@ Add the plugin to your `docusaurus.config.ts`:
 module.exports = {
   plugins: [
     [
-      './plugins/blog-data-plugin',
+      "./plugins/blog-data-plugin",
       {
-        blogDir: 'blog',
-        routeBasePath: 'blog',
+        blogDir: "blog",
+        routeBasePath: "blog",
         postsPerPage: 10,
         includeReadingTime: true,
-        recentPostsCount: 5
-      }
-    ]
-  ]
+        recentPostsCount: 5,
+      },
+    ],
+  ],
 };
 ```
 
@@ -36,15 +36,15 @@ module.exports = {
 Use the `useGlobalData` hook to access blog data in your components:
 
 ```typescript
-import useGlobalData from '@docusaurus/useGlobalData';
+import useGlobalData from "@docusaurus/useGlobalData";
 
 function MyComponent() {
-  const { blogData } = useGlobalData()['aftdynamics-blog-data-plugin'];
-  
+  const { blogData } = useGlobalData()["aftdynamics-blog-data-plugin"];
+
   return (
     <div>
       <h2>Recent Posts</h2>
-      {blogData.recentPosts.map(post => (
+      {blogData.recentPosts.map((post) => (
         <div key={post.id}>
           <h3>{post.title}</h3>
           <p>{post.description}</p>
@@ -58,11 +58,11 @@ function MyComponent() {
 ## Configuration Options
 
 - `blogDir`: Directory containing blog posts (default: 'blog')
-- `routeBasePath`: Base path for blog routes (default: 'blog')  
+- `routeBasePath`: Base path for blog routes (default: 'blog')
 - `postsPerPage`: Number of posts per page (default: 10)
 - `includeReadingTime`: Include reading time calculation (default: true)
 - `recentPostsCount`: Number of recent posts to include (default: 5)
 
 ## Development
 
-This plugin is part of the AFT Dynamics documentation site and follows Docusaurus plugin conventions.
+This plugin is part of the AFTdynamics documentation site and follows Docusaurus plugin conventions.

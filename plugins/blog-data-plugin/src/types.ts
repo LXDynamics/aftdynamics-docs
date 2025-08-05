@@ -1,5 +1,5 @@
 /**
- * TypeScript definitions for AFT Dynamics Blog Data Plugin
+ * TypeScript definitions for AFTdynamics Blog Data Plugin
  */
 
 export interface BlogPost {
@@ -56,9 +56,9 @@ export interface PluginOptions {
   recentPostsCount?: number;
 }
 
-declare module '@docusaurus/useGlobalData' {
+declare module "@docusaurus/useGlobalData" {
   interface GlobalData {
-    'aftdynamics-blog-data-plugin': {
+    "aftdynamics-blog-data-plugin": {
       blogData: BlogData;
       pluginVersion: string;
     };

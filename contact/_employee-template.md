@@ -21,7 +21,7 @@ import { AuthorBlogPosts } from '@site/src/components/AuthorBlogPosts';
 
 ## About
 
-[Employee bio paragraph describing their role, education, experience, and expertise at AFT Dynamics.]
+[Employee bio paragraph describing their role, education, experience, and expertise at AFTdynamics.]
 
 ## Recent Blog Posts
 

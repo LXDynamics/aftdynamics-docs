@@ -3,11 +3,13 @@
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## Project Overview
-This is a Docusaurus v3.8.1 documentation website for AFT Dynamics, a rocket engine manufacturing company. The site uses TypeScript, React, and MDX for creating rich documentation experiences.
+
+This is a Docusaurus v3.8.1 documentation website for AFTdynamics, a rocket engine manufacturing company. The site uses TypeScript, React, and MDX for creating rich documentation experiences.
 
 ## Key Commands
 
 ### Development
+
 ```bash
 # Install dependencies
 yarn
@@ -20,6 +22,7 @@ yarn typecheck
 ```
 
 ### Build & Deploy
+
 ```bash
 # Build static production site
 yarn build
@@ -38,6 +41,7 @@ yarn clear
 ## Architecture & Structure
 
 ### Directory Layout
+
 - `docs/` - Main documentation content in Markdown/MDX format
   - `index.md` - Introduction/landing page for docs
   - `business/` - Business model documentation
@@ -51,11 +55,13 @@ yarn clear
 - `contact/` - Contact information pages
 
 ### Configuration Files
+
 - `docusaurus.config.ts` - Main site configuration (title, URL, themes, plugins)
 - `sidebars.ts` - Documentation sidebar structure
 - `tsconfig.json` - TypeScript configuration
 
 ### Key Technologies
+
 - **Docusaurus 3.8.1** - Static site generator
 - **React 19.0.0** - UI components
 - **TypeScript** - Type safety
@@ -67,6 +73,7 @@ yarn clear
 ## Development Guidelines
 
 ### Adding Documentation
+
 1. Create `.md` or `.mdx` files in the `docs/` directory
 2. Sidebars auto-generate from folder structure
 3. Use frontmatter for metadata:
@@ -78,16 +85,19 @@ yarn clear
    ```
 
 ### Creating Components
+
 1. Add React components to `src/components/`
 2. Import and use in MDX files or pages
 3. Follow existing component patterns (TypeScript, CSS Modules)
 
 ### Styling
+
 - Use CSS Modules for component-specific styles
 - Global styles go in `src/css/custom.css`
 - Theme variables are defined in the CSS custom properties
 
 ### Important Notes
+
 - The project is transitioning from default Docusaurus template
 - Some navbar/footer links still reference default values
 - Always run `yarn typecheck` before committing TypeScript changes
@@ -95,4 +105,5 @@ yarn clear
 - The site deploys to https://aftdynamics.com via GitHub Pages
 
 ## Development Best Practices
+
 - Remember to use npm not yarn

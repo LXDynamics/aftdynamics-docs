@@ -6,7 +6,7 @@ title: The Team
 
 # The Team
 
-Welcome to the AFT Dynamics team page. Here you can find information about The Team and how to reach us.
+Welcome to the AFTdynamics team page. Here you can find information about The Team and how to reach us.
 
 ## Leadership
 
@@ -14,4 +14,4 @@ Welcome to the AFT Dynamics team page. Here you can find information about The T
 
 ## General Inquiries
 
-For general inquiries about AFT Dynamics and our rocket engine technology, please contact [info@aftdynamics.com](mailto:info@aftdynamics.com).
+For general inquiries about AFTdynamics and our rocket engine technology, please contact [info@aftdynamics.com](mailto:info@aftdynamics.com).

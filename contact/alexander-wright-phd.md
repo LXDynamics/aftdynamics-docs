@@ -22,7 +22,7 @@ import { AuthorBlogPosts } from '@site/src/components/AuthorBlogPosts';
 
 ## About
 
-Alexander Wright is a PhD in Mechanical Engineering from Dalhousie University, Halifax, Nova Scotia, Canada. He is the founder and CEO of AFT Dynamics, a company that designs and manufactures rocket engines.
+Alexander Wright is a PhD in Mechanical Engineering from Dalhousie University, Halifax, Nova Scotia, Canada. He is the founder and CEO of AFTdynamics, a company that designs and manufactures rocket engines.
 
 ## Recent Blog Posts
 

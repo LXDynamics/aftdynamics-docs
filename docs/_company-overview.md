@@ -1,8 +1,8 @@
-# AFT Dynamics Company Overview
+# AFTdynamics Company Overview
 
 ## Executive Summary
 
-AFT Dynamics is revolutionising space propulsion through our innovative engine cluster architecture. Founded in 2025 and based in Adelaide, South Australia, we're developing next-generation rocket engines that address critical limitations in current propulsion systems.
+AFTdynamics is revolutionising space propulsion through our innovative engine cluster architecture. Founded in 2025 and based in Adelaide, South Australia, we're developing next-generation rocket engines that address critical limitations in current propulsion systems.
 
 ## The Opportunity
 
@@ -17,7 +17,7 @@ Current propulsion systems face significant challenges in meeting these evolving
 
 ## Our Solution
 
-AFT Dynamics has developed a revolutionary engine cluster architecture that delivers:
+AFTdynamics has developed a revolutionary engine cluster architecture that delivers:
 
 ### Enhanced Efficiency
 
@@ -45,7 +45,7 @@ AFT Dynamics has developed a revolutionary engine cluster architecture that deli
 
 ## Market Position
 
-AFT Dynamics is positioned to serve the rapidly growing commercial launch market:
+AFTdynamics is positioned to serve the rapidly growing commercial launch market:
 
 - Small to medium launch vehicles
 - Upper stage applications
@@ -77,7 +77,7 @@ The Team brings together expertise in:
 
 ## Investment Opportunity
 
-AFT Dynamics represents a unique opportunity to invest in:
+AFTdynamics represents a unique opportunity to invest in:
 
 - Ground-floor entry into revolutionary propulsion technology
 - Rapidly growing space economy
@@ -105,7 +105,7 @@ Our goal is to become the leading provider of advanced propulsion solutions for 
 
 ## Contact Information
 
-**AFT Dynamics Pty Ltd**
+**AFTdynamics Pty Ltd**
 Adelaide, South Australia
 
 **General Inquiries**: [info@aftdynamics.com](mailto:info@aftdynamics.com)
@@ -115,4 +115,4 @@ Adelaide, South Australia
 
 ---
 
-_This overview provides general information about AFT Dynamics. For detailed technical specifications or confidential business information, please contact us directly._
+_This overview provides general information about AFTdynamics. For detailed technical specifications or confidential business information, please contact us directly._

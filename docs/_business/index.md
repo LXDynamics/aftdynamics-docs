@@ -5,7 +5,7 @@ title: Business Model
 
 # Business Model
 
-AFT Dynamics is a rocket engine manufacturing company focused on developing innovative propulsion systems for the space industry.
+AFTdynamics is a rocket engine manufacturing company focused on developing innovative propulsion systems for the space industry.
 
 ## Our Mission
 
