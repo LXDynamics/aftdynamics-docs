@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   width="370"
+   height="140"
+   viewBox="0 0 7400 2800"
+   id="svg15"
+   sodipodi:docname="logo-stacked-clean.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs15" />
+  <sodipodi:namedview
+     id="namedview15"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:current-layer="svg15" />
+  <g
+     fill="#041e42"
+     stroke="#ffffff"
+     stroke-width="20"
+     id="g15"
+     style="stroke:none;paint-order:normal;stroke-opacity:1">
+    <!-- AFT text -->
+    <g
+       transform="translate(-189.996,-214.37653)"
+       id="g14"
+       style="stroke:none;paint-order:normal;stroke-opacity:1">
+      <g
+         transform="translate(61.90283,52.188265)"
+         id="g13"
+         style="stroke:none;paint-order:normal;stroke-opacity:1">
+        <g
+           transform="translate(-177.309)"
+           id="g5"
+           style="stroke:none;paint-order:normal;stroke-opacity:1">
+          <!-- A -->
+          <path
+             d="m 2877.312,1030.5569 a 400,400 0 0 0 800,0 400,400 0 0 0 -800,0 m 600,0 a 200,200 0 0 1 -400,0 200,200 0 0 1 400,0 v 400 h 200 v -400"
+             id="path1"
+             style="paint-order:normal;stroke-linecap:butt;stroke:none;stroke-opacity:1" />
+          <!-- F -->
+          <path
+             d="m 3977.312,1430.5569 h -200 V 830.55687 h -100 l 100,-200 a 400,400 0 0 1 400.0001,-400 h 250 l -100,200 h -150 a 200,200 0 0 0 -200,200 h 400 l -100,200 h -300 z"
+             id="path2"
+             style="stroke:none;paint-order:normal;stroke-opacity:1" />
+          <!-- T -->
+          <path
+             d="m 4877.312,1430.5569 a 400,400 0 0 1 -400,-400 V 830.55687 h -100 l 100,-200 v -400 l 200,100 v 300 h 400 l -100,200 h -300 v 200.00003 a 200,200 0 0 0 200,200 h 250 l -100,200 h -50 z"
+             id="path3"
+             style="stroke:none;paint-order:normal;stroke-opacity:1" />
+          <!-- Dots -->
+          <rect
+             x="3702.314"
+             y="1380.5569"
+             width="50"
+             height="50"
+             id="rect3"
+             style="stroke:none;paint-order:normal;stroke-opacity:1" />
+          <rect
+             x="4002.312"
+             y="1380.5569"
+             width="50"
+             height="50"
+             id="rect4"
+             style="stroke:none;paint-order:normal;stroke-opacity:1" />
+          <rect
+             x="5077.312"
+             y="1380.5569"
+             width="50"
+             height="50"
+             id="rect5"
+             style="stroke:none;paint-order:normal;stroke-opacity:1" />
+        </g>
+        <!-- DYNAMICS text -->
+        <g
+           id="g12"
+           style="stroke:none;paint-order:normal;stroke-opacity:1">
+          <!-- D -->
+          <path
+             d="m 999.996,2100 a 400,400 0 0 0 -800,0 400,400 0 0 0 800,0 m -200,0 a 200,200 0 0 1 -400,0 200,200 0 0 1 400,0 m 200,0 v -700 l -200,-100 v 800"
+             id="path5"
+             style="stroke:none;paint-order:normal;stroke-opacity:1" />
+          <!-- Y -->
+          <path
+             d="m 1849.998,2100 a 400,400 0 0 1 -800,0 v -400 l 200,100 v 300 a 200,200 0 0 0 400,0 v -400 l 200,100 v 700 a 400,400 0 0 1 -400,400 h -200 l 100,-200 h 100 a 200,200 0 0 0 200,-200 v -400"
+             id="path6"
+             style="stroke:none;paint-order:normal;stroke-opacity:1" />
+          <!-- N -->
+          <path
+             d="m 1900,2100 a 400,400 0 0 1 800,0 v 400 h -200 v -400 a 200,200 0 0 0 -400,0 v 400 h -200 v -800 l 200,100 v 300"
+             id="path7"
+             style="stroke:none;paint-order:normal;stroke-opacity:1" />
+          <!-- A -->
+          <path
+             d="m 2750.002,2100 a 400,400 0 0 0 800,0 400,400 0 0 0 -800,0 m 600,0 a 200,200 0 0 1 -400,0 200,200 0 0 1 400,0 v 400 h 200 v -400"
+             id="path8"
+             style="stroke:none;paint-order:normal;stroke-opacity:1" />
+          <!-- M -->
+          <path
+             d="m 3600.004,2100 a 400,400 0 0 1 800,0 m -200,0 a 400,400 0 0 1 800,0 v 400 h -200 v -400 a 200,200 0 0 0 -400,0 v 100 z m 0,0 a 200,200 0 0 0 -400,0 v 400 h -200 v -800 l 200,100 v 300"
+             id="path9"
+             style="stroke:none;paint-order:normal;stroke-opacity:1" />
+          <!-- I -->
+          <path
+             d="m 5050.006,1700 v 400 a 400,400 0 0 0 400,400 h 200 l 100,-200 h -300 a 200,200 0 0 1 -200,-200 v -300 z m 0,-100 v -100 h 200 v 200 z"
+             id="path10"
+             style="stroke:none;paint-order:normal;stroke-opacity:1" />
+          <!-- C -->
+          <path
+             d="m 6600.008,1700 -100,200 h -300 a 200,200 0 0 0 0,400 h 400 l -100,200 h -300 a 400,400 0 0 1 0,-800 z"
+             id="path11"
+             style="stroke:none;paint-order:normal;stroke-opacity:1" />
+          <!-- S -->
+          <path
+             d="m 7450.01,1700 -100,200 h -475 a 50,50 0 0 0 0,100 h 325 a 250,250 0 0 1 0,500 h -550 l 100,-200 h 450 a 50,50 0 0 0 0,-100 h -300 a 250,250 0 0 1 0,-500 z"
+             id="path12"
+             style="stroke:none;paint-order:normal;stroke-opacity:1" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
