@@ -1,0 +1,8 @@
+# Deployment artifacts
+*.log
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*~
