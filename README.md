@@ -24,6 +24,7 @@ This repository contains the **built and deployed** version of the AFT Dynamics 
 ## Deployment Commands
 
 From the source repository (`aft-public/website/`):
+
 ```bash
 # Build production site
 npm run build
@@ -39,4 +40,5 @@ npm run deploy
 - **DNS**: Custom domain configuration via CNAME
 
 ## Security Classification
+
 **PUBLIC** - Production website deployment
