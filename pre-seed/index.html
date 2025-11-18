@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AFT Dynamics - Australian Aerospace Propulsion Technology. Rocket Engines for the Rest of Us."
+    />
+    <meta
+      property="og:title"
+      content="AFT Dynamics - Rocket Engines for the Rest of Us"
+    />
+    <meta
+      property="og:description"
+      content="Join the future of aerospace propulsion. Get updates on our innovative rocket engine technology."
+    />
+    <meta property="og:image" content="https://aftdynamics.com/img/logo.svg" />
+    <meta property="og:url" content="https://aftdynamics.com" />
+    <title>AFT Dynamics - We Make Rocket Engines</title>
+    <link rel="icon" href="/img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --deep-space-blue: #041e42;
+        --titanium-blue: #6b8cae;
+        --glowing-red: #db0007;
+        --deep-space-dark: #4a90e2;
+        --launch-pad-grey: #f5f7fa;
+        --cryogenic-ice-blue: #b8e6ff;
+      }
+
+      body {
+        font-family: "Roboto", -apple-system, BlinkMacSystemFont, sans-serif;
+        background: #000000;
+        color: #ffffff;
+        overflow-x: hidden;
+        line-height: 1.6;
+      }
+
+      /* Animated gradient background */
+      .background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: radial-gradient(
+            ellipse at top,
+            rgba(4, 30, 66, 0.6) 0%,
+            rgba(0, 0, 0, 0.9) 50%,
+            #000000 100%
+          ),
+          radial-gradient(
+            ellipse at bottom,
+            rgba(219, 0, 7, 0.15) 0%,
+            transparent 50%
+          );
+      }
+
+      .stars {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+
+      .star {
+        position: absolute;
+        width: 2px;
+        height: 2px;
+        background: white;
+        border-radius: 50%;
+        animation: twinkle 4s infinite;
+      }
+
+      @keyframes twinkle {
+        0%,
+        100% {
+          opacity: 0.3;
+        }
+        50% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          transform: scale(1);
+          opacity: 0.8;
+        }
+        50% {
+          transform: scale(1.05);
+          opacity: 1;
+        }
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+        position: relative;
+        z-index: 1;
+      }
+
+
+      /* Hero Section */
+      .hero {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 4rem 0;
+      }
+
+      .hero-logo {
+        width: 700px;
+        max-width: 90%;
+        margin-bottom: 2rem;
+        filter: drop-shadow(0 0 30px rgba(74, 144, 226, 0.4));
+        animation: fadeInUp 1s ease-out 0s both;
+      }
+
+      h1 {
+        font-size: clamp(3rem, 8vw, 7rem);
+        font-weight: 900;
+        margin-bottom: 1rem;
+        background: linear-gradient(
+          135deg,
+          #ffffff 0%,
+          var(--cryogenic-ice-blue) 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        animation: fadeInUp 1s ease-out 0.2s both;
+        letter-spacing: -0.02em;
+        line-height: 1.1;
+      }
+
+      .tagline {
+        font-size: clamp(1.25rem, 3vw, 2.5rem);
+        font-weight: 300;
+        margin-bottom: 1rem;
+        color: var(--titanium-blue);
+        animation: fadeInUp 1s ease-out 0.4s both;
+      }
+
+      .subtitle {
+        font-size: clamp(1rem, 2vw, 1.5rem);
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.7);
+        max-width: 800px;
+        margin: 0 auto 3rem;
+        animation: fadeInUp 1s ease-out 0.6s both;
+      }
+
+      /* Form Section */
+      .form-container {
+        background: rgba(4, 30, 66, 0.3);
+        border: 1px solid rgba(74, 144, 226, 0.3);
+        border-radius: 16px;
+        padding: 3rem;
+        max-width: 600px;
+        margin: 0 auto;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        animation: fadeInUp 1s ease-out 0.8s both;
+      }
+
+      .form-title {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        color: #ffffff;
+      }
+
+      .form-description {
+        font-size: 1.1rem;
+        color: rgba(255, 255, 255, 0.7);
+        margin-bottom: 2rem;
+      }
+
+      .form-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .form-group {
+        text-align: left;
+      }
+
+      .form-group.full-width {
+        grid-column: 1 / -1;
+      }
+
+      @media (max-width: 768px) {
+        .form-row {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      label {
+        display: block;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+        color: var(--titanium-blue);
+        font-size: 0.95rem;
+      }
+
+      input[type="text"],
+      input[type="email"] {
+        width: 100%;
+        padding: 1rem;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(74, 144, 226, 0.3);
+        border-radius: 8px;
+        color: #ffffff;
+        font-size: 1rem;
+        font-family: "Roboto", sans-serif;
+        transition: all 0.3s ease;
+      }
+
+      input[type="text"]:focus,
+      input[type="email"]:focus {
+        outline: none;
+        border-color: var(--deep-space-dark);
+        background: rgba(255, 255, 255, 0.08);
+        box-shadow: 0 0 20px rgba(74, 144, 226, 0.2);
+      }
+
+      .checkbox-group {
+        margin: 1.5rem 0;
+        padding: 1.5rem;
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        border: 1px solid rgba(74, 144, 226, 0.2);
+      }
+
+      .checkbox-label {
+        display: block;
+        margin-bottom: 0.25rem;
+        color: #ffffff;
+        cursor: pointer;
+        font-size: 1rem;
+        padding-left: 2rem;
+        position: relative;
+        user-select: none;
+      }
+
+      .checkbox-label input[type="checkbox"] {
+        position: absolute;
+        left: 0;
+        top: 0.25rem;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        accent-color: var(--glowing-red);
+      }
+
+      .checkbox-description {
+        font-size: 0.85rem;
+        color: rgba(255, 255, 255, 0.6);
+        margin-top: 0.25rem;
+        margin-bottom: 1.25rem;
+        padding-left: 2rem;
+      }
+
+      .checkbox-description:last-child {
+        margin-bottom: 0;
+      }
+
+      button {
+        width: 100%;
+        padding: 1.25rem 2rem;
+        background: linear-gradient(
+          135deg,
+          var(--glowing-red) 0%,
+          #ff1a1a 100%
+        );
+        color: #ffffff;
+        border: none;
+        border-radius: 8px;
+        font-size: 1.1rem;
+        font-weight: 700;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        box-shadow: 0 10px 30px rgba(219, 0, 7, 0.3);
+      }
+
+      button:hover:not(:disabled) {
+        transform: translateY(-2px);
+        box-shadow: 0 15px 40px rgba(219, 0, 7, 0.5);
+        animation: pulse 2s infinite;
+      }
+
+      button:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+      }
+
+      .message {
+        margin-top: 1rem;
+        padding: 1rem;
+        border-radius: 8px;
+        font-size: 0.95rem;
+        text-align: center;
+        display: none;
+      }
+
+      .message.success {
+        background: rgba(0, 255, 127, 0.1);
+        border: 1px solid rgba(0, 255, 127, 0.3);
+        color: #00ff7f;
+        display: block;
+      }
+
+      .message.error {
+        background: rgba(255, 0, 0, 0.1);
+        border: 1px solid rgba(255, 0, 0, 0.3);
+        color: #ff6b6b;
+        display: block;
+      }
+
+      /* Footer */
+      footer {
+        padding: 3rem 0 2rem;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 0.9rem;
+      }
+
+      footer a {
+        color: var(--deep-space-dark);
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      footer a:hover {
+        color: var(--cryogenic-ice-blue);
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .form-container {
+          padding: 2rem 1.5rem;
+        }
+
+        .hero {
+          padding: 2rem 0;
+        }
+
+        h1 {
+          font-size: 2.5rem;
+        }
+
+        .tagline {
+          font-size: 1.25rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="stars" id="stars"></div>
+
+    <div class="container">
+      <main class="hero">
+        <img src="/img/roundel-stacked.svg" alt="AFT Dynamics Roundel" class="hero-logo" />
+        <h1>Rocket Engines for the Rest of Us</h1>
+        <p class="tagline">Aerospace Propulsion's Future</p>
+        <p class="subtitle">
+          Join us on our mission to revolutionise rocket engine technology
+          through innovative cluster architectures that enhance efficiency,
+          reliability, and reusability in orbit and to orbit.
+        </p>
+
+        <div class="form-container">
+          <h2 class="form-title">Stay Connected</h2>
+          <p class="form-description">
+            Get updates on our progress and opportunities to collaborate.
+          </p>
+
+          <form id="signupForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" required />
+              </div>
+
+              <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" required />
+              </div>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" name="lists" value="general" checked />
+                General Updates
+              </label>
+              <p class="checkbox-description">
+                Company news, milestones, and announcements
+              </p>
+
+              <label class="checkbox-label">
+                <input type="checkbox" name="lists" value="customer" />
+                Customer & Partner Opportunities
+              </label>
+              <p class="checkbox-description">
+                Collaboration opportunities and technical partnerships
+              </p>
+
+              <label class="checkbox-label">
+                <input type="checkbox" name="lists" value="investor" />
+                Investor Updates
+              </label>
+              <p class="checkbox-description">
+                Funding rounds and investor relations
+              </p>
+            </div>
+
+            <button type="submit" id="submitBtn">Join the Mission</button>
+
+            <div id="message" class="message"></div>
+          </form>
+        </div>
+      </main>
+
+      <footer>
+        <p>&copy; 2025 AFT Dynamics Pty. Ltd. | ABN 81 689 779 244</p>
+        <p>
+          Adelaide, South Australia |
+          <a href="mailto:contact@aftdynamics.com">contact@aftdynamics.com</a>
+        </p>
+      </footer>
+    </div>
+
+    <script>
+      // Create starfield
+      const starsContainer = document.getElementById("stars");
+      for (let i = 0; i < 100; i++) {
+        const star = document.createElement("div");
+        star.className = "star";
+        star.style.left = Math.random() * 100 + "%";
+        star.style.top = Math.random() * 100 + "%";
+        star.style.animationDelay = Math.random() * 4 + "s";
+        starsContainer.appendChild(star);
+      }
+
+      // Form submission
+      const form = document.getElementById("signupForm");
+      const submitBtn = document.getElementById("submitBtn");
+      const messageDiv = document.getElementById("message");
+
+      // Production API endpoint
+      const API_ENDPOINT = "https://api.alexwright.ca/api/contact";
+      const SOURCE_PAGE = "Pre-seed Landing Page";
+
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        // Get form data
+        const firstName = document.getElementById("firstName").value.trim();
+        const lastName = document.getElementById("lastName").value.trim();
+        const email = document.getElementById("email").value.trim();
+
+        // Get selected lists
+        const checkboxes = document.querySelectorAll(
+          'input[name="lists"]:checked'
+        );
+        const selectedLists = Array.from(checkboxes).map((cb) => cb.value);
+
+        if (selectedLists.length === 0) {
+          showMessage("Please select at least one mailing list.", "error");
+          return;
+        }
+
+        // Build message with selected lists
+        const listsText = selectedLists
+          .map((list) => {
+            const labels = {
+              general: "General Updates",
+              customer: "Customer & Partner Opportunities",
+              investor: "Investor Updates",
+            };
+            return labels[list];
+          })
+          .join(", ");
+
+        const message = `Mailing list signup:\n\nRequested lists: ${listsText}\n\nSource: Pre-seed landing page`;
+
+        // Prepare payload
+        const payload = {
+          firstName,
+          lastName,
+          email,
+          message,
+          mailingLists: selectedLists,
+        };
+
+        // Disable button
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Submitting...";
+
+        try {
+          const response = await fetch(API_ENDPOINT, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(payload),
+          });
+
+          const data = await response.json();
+
+          if (response.ok) {
+            showMessage(
+              data.message || "Thank you for joining! We'll be in touch soon.",
+              "success"
+            );
+            form.reset();
+            // Re-check the general updates box
+            document.querySelector('input[value="general"]').checked = true;
+          } else {
+            showMessage(
+              data.error || "Something went wrong. Please try again.",
+              "error"
+            );
+          }
+        } catch (error) {
+          console.error("Submission error:", error);
+          showMessage(
+            "Unable to connect. Please try again later or email us directly at contact@aftdynamics.com",
+            "error"
+          );
+        } finally {
+          submitBtn.disabled = false;
+          submitBtn.textContent = "Join the Mission";
+        }
+      });
+
+      function showMessage(text, type) {
+        messageDiv.textContent = text;
+        messageDiv.className = `message ${type}`;
+        messageDiv.style.display = "block";
+
+        // Scroll message into view
+        messageDiv.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      }
+    </script>
+  </body>
+</html>
