@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkaftdynamics_docs=self.webpackChunkaftdynamics_docs||[]).push([[121],{8070:a=>{a.exports=JSON.parse('{"tags":[{"label":"AFT","permalink":"/blog/tags/aft","count":1},{"label":"Company","permalink":"/blog/tags/company","count":1},{"label":"Info","permalink":"/blog/tags/info","count":1}]}')}}]);

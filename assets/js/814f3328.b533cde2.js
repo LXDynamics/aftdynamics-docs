@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkaftdynamics_docs=self.webpackChunkaftdynamics_docs||[]).push([[472],{5513:s=>{s.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"What is AFTdynamics?","permalink":"/blog/what-is-aft","unlisted":false,"date":"2025-07-11T00:00:00.000Z"}]}')}}]);
