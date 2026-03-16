@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact AFT Dynamics - Australian Aerospace Propulsion Technology." />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Contact AFT Dynamics</title>
+    <link rel="icon" href="/img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+
+      :root {
+        --deep-space-blue: #041e42;
+        --titanium-blue: #6b8cae;
+        --glowing-red: #db0007;
+        --accent-blue: #4a90e2;
+        --cryogenic-ice-blue: #b8e6ff;
+      }
+
+      body {
+        font-family: "Roboto", -apple-system, BlinkMacSystemFont, sans-serif;
+        background: #000000;
+        color: #ffffff;
+        overflow-x: hidden;
+        line-height: 1.6;
+      }
+
+      .background {
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        z-index: -1;
+        background:
+          radial-gradient(ellipse at top, rgba(4,30,66,0.6) 0%, rgba(0,0,0,0.9) 50%, #000 100%),
+          radial-gradient(ellipse at bottom, rgba(219,0,7,0.15) 0%, transparent 50%);
+      }
+
+      .stars { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; }
+      .star { position: absolute; width: 2px; height: 2px; background: white; border-radius: 50%; animation: twinkle 4s infinite; }
+
+      @keyframes twinkle { 0%, 100% { opacity: 0.3; } 50% { opacity: 1; } }
+      @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+      @keyframes pulse { 0%, 100% { transform: scale(1); opacity: 0.8; } 50% { transform: scale(1.05); opacity: 1; } }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 0 2rem;
+        position: relative;
+        z-index: 1;
+      }
+
+      .page {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 4rem 0;
+      }
+
+      .logo {
+        width: 300px;
+        max-width: 70%;
+        margin-bottom: 1.5rem;
+        filter: drop-shadow(0 0 20px rgba(74,144,226,0.4));
+        animation: fadeInUp 1s ease-out 0s both;
+      }
+
+      h1 {
+        font-size: clamp(1.5rem, 4vw, 2.5rem);
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        color: #ffffff;
+        animation: fadeInUp 1s ease-out 0.2s both;
+      }
+
+      .subtitle {
+        font-size: 1.1rem;
+        color: var(--titanium-blue);
+        margin-bottom: 2rem;
+        animation: fadeInUp 1s ease-out 0.3s both;
+      }
+
+      .form-container {
+        width: 100%;
+        background: rgba(4,30,66,0.3);
+        border: 1px solid rgba(74,144,226,0.3);
+        border-radius: 16px;
+        padding: 2.5rem;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+        animation: fadeInUp 1s ease-out 0.4s both;
+      }
+
+      .form-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin-bottom: 1.25rem;
+      }
+
+      .form-group { text-align: left; }
+      .form-group.full-width { grid-column: 1 / -1; }
+
+      @media (max-width: 768px) {
+        .form-row { grid-template-columns: 1fr; }
+        .form-container { padding: 2rem 1.5rem; }
+      }
+
+      label {
+        display: block;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+        color: var(--titanium-blue);
+        font-size: 0.95rem;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 0.9rem 1rem;
+        background: rgba(255,255,255,0.05);
+        border: 1px solid rgba(74,144,226,0.3);
+        border-radius: 8px;
+        color: #ffffff;
+        font-size: 1rem;
+        font-family: "Roboto", sans-serif;
+        transition: all 0.3s ease;
+        resize: vertical;
+      }
+
+      input:focus, textarea:focus {
+        outline: none;
+        border-color: var(--accent-blue);
+        background: rgba(255,255,255,0.08);
+        box-shadow: 0 0 20px rgba(74,144,226,0.2);
+      }
+
+      textarea { min-height: 100px; }
+
+      button {
+        width: 100%;
+        padding: 1.1rem 2rem;
+        background: linear-gradient(135deg, var(--glowing-red) 0%, #ff1a1a 100%);
+        color: #ffffff;
+        border: none;
+        border-radius: 8px;
+        font-size: 1.1rem;
+        font-weight: 700;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        box-shadow: 0 10px 30px rgba(219,0,7,0.3);
+        margin-top: 0.5rem;
+      }
+
+      button:hover:not(:disabled) {
+        transform: translateY(-2px);
+        box-shadow: 0 15px 40px rgba(219,0,7,0.5);
+      }
+
+      button:disabled { opacity: 0.6; cursor: not-allowed; }
+
+      .message {
+        margin-top: 1rem;
+        padding: 1rem;
+        border-radius: 8px;
+        font-size: 0.95rem;
+        text-align: center;
+        display: none;
+      }
+
+      .message.success {
+        background: rgba(0,255,127,0.1);
+        border: 1px solid rgba(0,255,127,0.3);
+        color: #00ff7f;
+        display: block;
+      }
+
+      .message.error {
+        background: rgba(255,0,0,0.1);
+        border: 1px solid rgba(255,0,0,0.3);
+        color: #ff6b6b;
+        display: block;
+      }
+
+      footer {
+        padding: 2rem 0;
+        text-align: center;
+        color: rgba(255,255,255,0.4);
+        font-size: 0.85rem;
+      }
+
+      footer a { color: var(--accent-blue); text-decoration: none; }
+      footer a:hover { color: var(--cryogenic-ice-blue); }
+    </style>
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="stars" id="stars"></div>
+
+    <div class="container">
+      <main class="page">
+        <img src="/img/roundel-stacked.svg" alt="AFT Dynamics" class="logo" />
+        <h1>Get in Touch</h1>
+        <p class="subtitle">We'd love to hear from you</p>
+
+        <div class="form-container">
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" required />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group full-width">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group full-width">
+                <label for="company">Company</label>
+                <input type="text" id="company" name="company" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group full-width">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" placeholder="Tell us about your interest..." required></textarea>
+              </div>
+            </div>
+
+            <button type="submit" id="submitBtn">Send Message</button>
+            <div id="messageDiv" class="message"></div>
+          </form>
+        </div>
+      </main>
+
+      <footer>
+        <p>&copy; 2025 AFT Dynamics Pty. Ltd.</p>
+        <p><a href="mailto:contact@aftdynamics.com">contact@aftdynamics.com</a></p>
+      </footer>
+    </div>
+
+    <script>
+      // Starfield
+      const stars = document.getElementById("stars");
+      for (let i = 0; i < 80; i++) {
+        const s = document.createElement("div");
+        s.className = "star";
+        s.style.left = Math.random() * 100 + "%";
+        s.style.top = Math.random() * 100 + "%";
+        s.style.animationDelay = Math.random() * 4 + "s";
+        stars.appendChild(s);
+      }
+
+      // Source tracking — extracted from the URL path
+      const SOURCE = "linkedin";
+      const API_ENDPOINT = "https://api.alexwright.ca/api/contact";
+
+      const form = document.getElementById("contactForm");
+      const submitBtn = document.getElementById("submitBtn");
+      const msgDiv = document.getElementById("messageDiv");
+
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const payload = {
+          firstName: document.getElementById("firstName").value.trim(),
+          lastName: document.getElementById("lastName").value.trim(),
+          email: document.getElementById("email").value.trim(),
+          company: document.getElementById("company").value.trim(),
+          message: document.getElementById("message").value.trim(),
+          source: SOURCE,
+        };
+
+        if (!payload.firstName || !payload.lastName || !payload.email || !payload.message) {
+          showMsg("Please fill in all required fields.", "error");
+          return;
+        }
+
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Sending...";
+
+        try {
+          const res = await fetch(API_ENDPOINT, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(payload),
+          });
+
+          const data = await res.json();
+
+          if (res.ok) {
+            showMsg(data.message || "Thank you! We'll be in touch soon.", "success");
+            form.reset();
+          } else {
+            showMsg(data.error || "Something went wrong. Please try again.", "error");
+          }
+        } catch (err) {
+          console.error("Submission error:", err);
+          showMsg("Unable to connect. Please email us at contact@aftdynamics.com", "error");
+        } finally {
+          submitBtn.disabled = false;
+          submitBtn.textContent = "Send Message";
+        }
+      });
+
+      function showMsg(text, type) {
+        msgDiv.textContent = text;
+        msgDiv.className = "message " + type;
+        msgDiv.style.display = "block";
+        msgDiv.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      }
+    </script>
+  </body>
+</html>
